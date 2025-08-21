@@ -1,18 +1,25 @@
+import { retry } from 'rxjs';
 import { Experience } from './Experience';
+import { Project } from './Project';
 import { Social } from './Social';
 
 export class InfoUtil {
   static getSocials(): Social[] {
     return [
       {
-        name: 'GitHub',
-        url: 'https://github.com/jimuel30/',
-        icon: 'https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png', // You can replace with icon class name or image path
-      },
-      {
         name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/jimuel-cinco-b14191257/',
         icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzrdlv1qle8ssb16zhv0dVmNpGUcLxqIlo-A&s',
+      },
+      {
+        name: 'Facebook',
+        url: 'https://www.facebook.com/share/1CiixdQTdC/',
+        icon: 'https://cdn-icons-png.freepik.com/512/2496/2496095.png',
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/jimuel30/',
+        icon: 'https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png', // You can replace with icon class name or image path
       },
     ];
   }
@@ -71,6 +78,20 @@ export class InfoUtil {
               'https://s3-symbol-logo.tradingview.com/bdo-unibank--600.png', // ← replace with actual banner
           },
         ],
+      },
+    ];
+  }
+
+  static getProjects(): Project[] {
+    return [
+      {
+        name: 'Reddit Video Generator',
+        icon: 'https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-reddit-square1-512.png',
+        description:
+          'Automatically generates videos from Reddit posts and comments, ideal for content creation and social media sharing.',
+        demoUrl: 'https://github.com/jimuel30/reddit-video-maker',
+        repoUrl: 'https://github.com/jimuel30/reddit-video-maker',
+        liveUrl: 'https://github.com/jimuel30/reddit-video-maker',
       },
     ];
   }

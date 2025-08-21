@@ -7,19 +7,72 @@
   flex-direction: column;
   font-family: "Poppins";
 }
-.project-wrapper {
+.project-card {
   display: flex;
   width: 33vw;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* background-color: green; */
+  padding: 2rem;
 }
-.project h1 {
+.projects h1 {
   margin-bottom: 0;
   font-size: 4rem;
   padding-bottom: 0;
   width: 100%;
   text-align: center;
   line-height: 1;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.card-wrapper {
+  width: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  gap: 1rem;
+}
+
+.exp-icon {
+  width: 3rem;
+  height: 3rem;
+  min-width: 3rem;
+  min-height: 3rem;
+  background-size: cover;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.154);
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.project-name {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-weight: bold;
+}
+.project-description {
+  margin: 0;
+  font-size: 0.7rem;
+  line-height: 1;
+  padding: 0;
+}
+
+@media (max-width: 1280px) {
+  .project-card {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    width: 90vw;
+  }
 }

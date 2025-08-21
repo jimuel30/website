@@ -1,5 +1,19 @@
 <div class="projects" id="projects">
   <div class="project-wrapper">
     <h1>Projects</h1>
+    <div class="proj-wrapper">
+      <div class="project-card">
+        <div class="card-wrapper" *ngFor="let project of projects">
+          <div
+            class="exp-icon"
+            [style.background-image]="'url(' + project.icon + ')'"
+          ></div>
+          <div class="project-details">
+            <label class="project-name">{{ project.name }}</label>
+            <p class="project-description">{{ project.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
