@@ -1,5 +1,11 @@
 <div class="main-wrapper">
-  <app-navbar></app-navbar>
-  <app-hero></app-hero>
+  <app-navbar
+    [aboutActive]="aboutActive"
+    [experienceActive]="experienceActive"
+    [projectActive]="projectActive"
+    (sectionClicked)="triggerNavbarChanges($event)"
+  ></app-navbar>
+  <app-hero (sectionViewed)="triggerNavbarChanges($event)"></app-hero>
   <app-experience></app-experience>
+  <app-projects></app-projects>
 </div>

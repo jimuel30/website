@@ -1,7 +1,3 @@
-:root {
-  font-size: clamp(14px, 1.5vw, 18px);
-}
-
 .navbar {
   width: 100%;
   display: flex;
@@ -16,6 +12,8 @@
   border-width: 0;
   border-bottom-width: 1px;
   border-color: rgba(0, 0, 0, 0.216);
+  position: fixed;
+  background-color: white;
 }
 
 .navbar h1 {
@@ -26,6 +24,12 @@
   white-space: nowrap;
   max-width: 30vw;
   padding: 0.5rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.navbar h1.active {
+  color: white;
+  background-color: black;
 }
 
 .navbar h1:hover {
@@ -33,6 +37,7 @@
   color: white;
   border-radius: 0.3rem;
 }
+
 @media (max-width: 1000px) {
   .navbar {
     padding: 1.4rem 0 1.4rem;

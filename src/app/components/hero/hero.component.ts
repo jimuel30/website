@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { SocialsComponent } from '../socials/socials.component';
 import { TechStackComponent } from '../tech-stack/tech-stack.component';
 
@@ -26,10 +26,15 @@ export class HeroComponent {
     if (navbar && hero) {
       const navbarHeight = navbar.offsetHeight;
       const viewportHeight = window.innerHeight;
-
-      const heroMinHeight = viewportHeight - navbarHeight;
-
-      hero.style.minHeight = `${heroMinHeight}px`;
+      hero.style.paddingTop = `${navbarHeight}px`;
     }
+  }
+
+  @Output() sectionViewed = new EventEmitter<string>();
+
+  ngAfterViewInit() {
+    console.log('hello');
+    // This runs after the component's view (and child views) are initialized
+    this.sectionViewed.emit('hero');
   }
 }

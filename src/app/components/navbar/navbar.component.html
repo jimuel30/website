@@ -1,5 +1,9 @@
 <section class="navbar" id="navbar">
-  <h1>About</h1>
-  <h1>Experience</h1>
-  <h1>Projects</h1>
+  <h1 (click)="scrollToSection('hero')" [class.active]="aboutActive">About</h1>
+  <h1 (click)="scrollToSection('experience')" [class.active]="experienceActive">
+    Experience
+  </h1>
+  <h1 (click)="scrollToSection('projects')" [class.active]="projectActive">
+    Projects
+  </h1>
 </section>
