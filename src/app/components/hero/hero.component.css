@@ -1,0 +1,59 @@
+.hero {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins";
+  padding-bottom: 20vh;
+}
+.hero-wrapper {
+  display: flex;
+  width: 33vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title-card {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title-card h1 {
+  margin-bottom: 0;
+  font-size: 4rem;
+  padding-bottom: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+}
+.title-card h2 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+.hero p {
+  width: 100%vw;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+.socials,
+.tech-stack {
+  width: 100%;
+  margin-top: 1rem;
+}
+@media (max-width: 1280px) {
+  .hero-wrapper {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-wrapper {
+    width: 90vw;
+  }
+}

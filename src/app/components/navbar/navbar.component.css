@@ -1,0 +1,54 @@
+:root {
+  font-size: clamp(14px, 1.5vw, 18px);
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* scales with root font-size */
+  font-family: "Poppins", sans-serif;
+  padding: 1rem 0 1rem;
+  margin: 0;
+  flex-direction: row;
+  border-style: solid;
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-color: rgba(0, 0, 0, 0.216);
+}
+
+.navbar h1 {
+  font-size: 1rem;
+  color: black;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  max-width: 30vw;
+  padding: 0.5rem 2rem;
+}
+
+.navbar h1:hover {
+  background-color: black;
+  color: white;
+  border-radius: 0.3rem;
+}
+@media (max-width: 1000px) {
+  .navbar {
+    padding: 1.4rem 0 1.4rem;
+  }
+  .navbar h1 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 1.2rem 0 1.2rem;
+  }
+  .navbar h1 {
+    font-size: 1.3rem;
+    padding: 0.3rem 1rem;
+  }
+}

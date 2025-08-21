@@ -1,0 +1,12 @@
+.main-wrapper {
+  margin: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  overflow: auto;
+  max-height: 100vh;
+}
