@@ -1,11 +1,11 @@
 .hero {
   display: flex;
   width: 100%;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   font-family: "Poppins";
-  padding-bottom: 20vh;
+  /* padding-bottom: 20vh; */
 }
 .hero-wrapper {
   display: flex;
