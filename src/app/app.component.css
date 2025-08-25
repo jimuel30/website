@@ -17,10 +17,6 @@
   height: 16px;
 }
 
-/* Style the track (background of the scrollbar) */
-::-webkit-scrollbar-track {
-}
-
 /* Style the draggable "thumb" part of the scrollbar */
 ::-webkit-scrollbar-thumb {
   background: black;

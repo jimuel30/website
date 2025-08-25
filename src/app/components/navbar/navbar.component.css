@@ -35,7 +35,7 @@
 .navbar h1:hover {
   background-color: black;
   color: white;
-  border-radius: 0.3rem;
+  /* border-radius: 0.3rem; */
 }
 
 @media (max-width: 1000px) {
